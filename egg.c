@@ -51,7 +51,8 @@ void egg_disp(const double y[]){
   ypt_xyz = (int)(xpt*xd_a21 + ypt*xd_a22 + zpt*xd_a23)+YSHIFT;
   newcolor(win, "White");
   
-  makecolor(MYCOLOR,100, 0.0,cnt%CLRDIV, &c_r,&c_g,&c_b);                        newrgbcolor(win,c_r,c_g,c_b);
+  makecolor(MYCOLOR,100, 0.0,cnt%CLRDIV, &c_r,&c_g,&c_b);
+  newrgbcolor(win,c_r,c_g,c_b);
   fillcirc(win, xpt_xyz, ypt_xyz, 4, 4);
 
   copylayer(win, 1, 0);
