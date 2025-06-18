@@ -2,7 +2,7 @@ CC= gcc
 CFLAGS= -O2 
 
 INC=  -I/usr/include/X11R5 -I/usr/include/X11 -I/usr/X11R6/include/X11  -I/opt/X11/include -I/usr/local/include
-LIBS= -leggx -L/usr/X11R6/lib -lX11 -lgsl -lm
+LIBS= -leggx -L/usr/X11R6/lib -lX11 -lgsl -lgslcblas -lm
 
 ###  Run options  ############################################
 RUN_OPTIONS= -DEGGX
